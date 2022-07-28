@@ -16,7 +16,7 @@ function App() {
   }, [dispatch])
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Navbar/>
       <main>
         <AppRouter/>

@@ -4,8 +4,8 @@ import Editor from '../pages/editor/Editor'
 import Error from '../pages/error/Error'
 
 export const urls = {
-  home: '/markdown-editor',
-  editor: '/markdown-editor/editor',
+  home: '/',
+  editor: '/editor',
   error: '*'
 }
 
