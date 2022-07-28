@@ -1,7 +1,7 @@
 {
   "name": "markdown-editor",
   "author": "Daniil Sintsov <daniilsintsov2007@yandex.ru>",
-  "homepage": "https://daniilsintsov.github.io/markdown-editor/",
+  "homepage": "https://daniilsintsov.github.io/markdown-editor",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

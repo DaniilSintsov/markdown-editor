@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom'
 import {useDispatch, useSelector} from 'react-redux'
 import {exitEditorPageAction} from '../../../redux/actions'
 import {downloadFile, getNewFileHandle} from '../../../api/downloadFile'
+import {urls} from '../../../router/routes'
 
 const Navbar = () => {
   const dispatch = useDispatch()
@@ -42,7 +43,7 @@ const Navbar = () => {
             style={isEditorPage ? {backgroundColor: 'var(--dark-blue)'} : {backgroundColor: 'var(--white)'}}>
       <div className="container">
         <nav className={classes.navbar}>
-          <Link to="https://daniilsintsov.github.io/markdown-editor/"
+          <Link to={urls.home}
                 onClick={exitEditorPage}
                 className={classes.logoWrapper}>
             <img src={logo}

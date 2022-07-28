@@ -3,6 +3,7 @@ import classes from './Home.module.css'
 import {Link} from 'react-router-dom'
 import {useDispatch} from 'react-redux'
 import {onEditorPageAction} from '../../redux/actions'
+import {urls} from '../../router/routes'
 
 const Home = () => {
   const dispatch = useDispatch()
@@ -17,7 +18,7 @@ const Home = () => {
       <div className={classes.welcome}>
         <h1 className={classes.welcome__title}>Ничего лишнего... Минималистичный редактор Markdown</h1>
         <p className={classes.welcome__text}>Наш простой редактор позволит вам создать Markdown-документ</p>
-        <Link to="https://daniilsintsov.github.io/markdown-editor/editor/"
+        <Link to={urls.editor}
               onClick={onEditorPage}
               className="link">За работу</Link>
       </div>

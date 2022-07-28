@@ -3,6 +3,7 @@ import classes from './Error.module.css'
 import {Link} from 'react-router-dom'
 import {exitEditorPageAction} from '../../redux/actions'
 import {useDispatch} from 'react-redux'
+import {urls} from '../../router/routes'
 
 const Error = () => {
   const dispatch = useDispatch()
@@ -18,7 +19,7 @@ const Error = () => {
         <div className={classes.error__content}>
           <h1 className={classes.error__title}>404</h1>
           <p className={classes.error__text}>Вы перешли на несуществущую страницу</p>
-          <Link to="https://daniilsintsov.github.io/markdown-editor/"
+          <Link to={urls.home}
                 className="link">На главную</Link>
         </div>
       </div>
