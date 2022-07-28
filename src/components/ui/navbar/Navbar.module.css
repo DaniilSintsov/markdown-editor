@@ -1,0 +1,41 @@
+.header {
+  position: relative;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 80px;
+  padding: 10px 0;
+}
+
+.logoWrapper {
+  max-width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid var(--white);
+}
+
+.logoWrapper img {
+  max-width: 100%;
+}
+
+.downloadLink {
+  font-size: 20px;
+  color: var(--white);
+  padding: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background-color: var(--dark-blue);
+  transition: 0.3s;
+  border: 2px solid var(--white);
+  cursor: pointer;
+}
