@@ -42,7 +42,7 @@ const Navbar = () => {
             style={isEditorPage ? {backgroundColor: 'var(--dark-blue)'} : {backgroundColor: 'var(--white)'}}>
       <div className="container">
         <nav className={classes.navbar}>
-          <Link to="/"
+          <Link to="https://daniilsintsov.github.io/markdown-editor/"
                 onClick={exitEditorPage}
                 className={classes.logoWrapper}>
             <img src={logo}

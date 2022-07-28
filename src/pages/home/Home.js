@@ -17,7 +17,7 @@ const Home = () => {
       <div className={classes.welcome}>
         <h1 className={classes.welcome__title}>Ничего лишнего... Минималистичный редактор Markdown</h1>
         <p className={classes.welcome__text}>Наш простой редактор позволит вам создать Markdown-документ</p>
-        <Link to="/editor"
+        <Link to="https://daniilsintsov.github.io/markdown-editor/editor/"
               onClick={onEditorPage}
               className="link">За работу</Link>
       </div>

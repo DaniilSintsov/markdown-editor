@@ -4,7 +4,7 @@ import Editor from '../pages/editor/Editor'
 import Error from '../pages/error/Error'
 
 export const routes = [
-  {path: '/', element: <Home/>},
-  {path: '/editor', element: <Editor/>},
+  {path: 'https://daniilsintsov.github.io/markdown-editor/', element: <Home/>},
+  {path: 'https://daniilsintsov.github.io/markdown-editor/editor/', element: <Editor/>},
   {path: '*', element: <Error/>},
 ]

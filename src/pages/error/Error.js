@@ -18,7 +18,7 @@ const Error = () => {
         <div className={classes.error__content}>
           <h1 className={classes.error__title}>404</h1>
           <p className={classes.error__text}>Вы перешли на несуществущую страницу</p>
-          <Link to="/"
+          <Link to="https://daniilsintsov.github.io/markdown-editor/"
                 className="link">На главную</Link>
         </div>
       </div>
