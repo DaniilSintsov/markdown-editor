@@ -10,7 +10,7 @@ function App() {
   const dispatch = useDispatch()
 
   useEffect(() => {
-    if (localStorage.getItem('isEditorPage')) {
+    if (localStorage.getItem('isEditorPage') && !localStorage.getItem('isHomePage')) {
       dispatch(onEditorPageAction())
     }
   }, [dispatch])

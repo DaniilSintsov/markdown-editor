@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import classes from './Home.module.css'
 import {Link} from 'react-router-dom'
 import {useDispatch} from 'react-redux'
@@ -8,8 +8,13 @@ import {urls} from '../../router/routes'
 const Home = () => {
   const dispatch = useDispatch()
 
+  useEffect(() => {
+    localStorage.setItem('isHomePage', 'true')
+  }, [])
+
   const onEditorPage = () => {
     dispatch(onEditorPageAction())
+    localStorage.removeItem('isHomePage')
     localStorage.setItem('isEditorPage', 'true')
   }
 

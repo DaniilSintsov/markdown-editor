@@ -15,6 +15,7 @@ const Navbar = () => {
   const exitEditorPage = () => {
     dispatch(exitEditorPageAction())
     localStorage.removeItem('isEditorPage')
+    localStorage.setItem('isHomePage', 'true')
   }
 
   const downLoadFileHandler = async () => {

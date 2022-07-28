@@ -11,6 +11,7 @@ const Error = () => {
   useEffect(() => {
     dispatch(exitEditorPageAction())
     localStorage.removeItem('isEditorPage')
+    localStorage.setItem('isHomePage', 'true')
   }, [dispatch])
 
   return (
