@@ -10,13 +10,14 @@ const Editor = () => {
   const dispatch = useDispatch()
   const markup = useSelector(state => state.markup)
 
-  const markupInputHandle = (e) => {
+  const markupInputHandle = e => {
     dispatch(markupInputAction(e.target.value))
   }
 
   const copyHandler = () => {
     if (markup.trim().length) {
-      navigator.clipboard.writeText(markup.trim())
+      navigator.clipboard
+        .writeText(markup.trim())
         .then(() => {
           alert('Копирование в буфер обмена произошло успешно!')
         })
@@ -35,17 +36,26 @@ const Editor = () => {
         <div className={classes.editor__wrapper}>
           <div className={classes.editor__editor}>
             <div className={classes.editor__header}>
-              <label className={classes.editor__label}
-                     htmlFor="editor">Редактор</label>
-              <button className={classes.editor__copy}
-                      onClick={copyHandler}>Скопировать в буфер обмена
+              <label
+                className={classes.editor__label}
+                htmlFor="editor"
+              >
+                Редактор
+              </label>
+              <button
+                className={classes.editor__copy}
+                onClick={copyHandler}
+              >
+                Скопировать в буфер обмена
               </button>
             </div>
             <div className={classes.editor__body}>
-              <textarea className={classes.editor__textarea}
-                        onChange={markupInputHandle}
-                        value={markup}
-                        id="editor"/>
+              <textarea
+                className={classes.editor__textarea}
+                onChange={markupInputHandle}
+                value={markup}
+                id="editor"
+              />
             </div>
           </div>
           <div className={classes.editor__preview}>
@@ -55,7 +65,9 @@ const Editor = () => {
             <div className={classes.editor__body}>
               <div className={classes.editor__previewContent}>
                 <SimpleBar style={{height: '100%', marginBottom: 0}}>
-                  <div dangerouslySetInnerHTML={{'__html': getMarkdown(markup)}}/>
+                  <div
+                    dangerouslySetInnerHTML={{__html: getMarkdown(markup)}}
+                  />
                 </SimpleBar>
               </div>
             </div>
