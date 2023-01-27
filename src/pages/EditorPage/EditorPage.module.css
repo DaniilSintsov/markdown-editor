@@ -41,9 +41,7 @@
 
 .editor__copy {
   padding: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
+  border-radius: 10px;
   font-size: 16px;
   color: var(--white);
   background-color: var(--dark-blue);
@@ -68,8 +66,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
   border-radius: 10px;
   padding: 10px;
 }

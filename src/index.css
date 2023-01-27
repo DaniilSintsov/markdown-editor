@@ -61,8 +61,6 @@ th {
   font-size: 20px;
   color: var(--white);
   padding: 15px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
   border-radius: 10px;
   background-color: var(--dark-blue);
   text-decoration: none;
