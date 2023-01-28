@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import logo from '../../assets/logo.png';
 import { useAppSelector } from '../../hooks/hooks';
 import { Paths } from '../../types/Paths.types';
-import { downloadTextFile } from '../../utils/helpers/downloadTextFile.helper';
+import { downloadTextFile } from '../../utils/helpers/downloadTextFile.helpers';
 import classes from './Navbar.module.css';
 
 const Navbar = () => {
