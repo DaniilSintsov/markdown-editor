@@ -3,7 +3,7 @@
 ![react](https://img.shields.io/npm/v/react?color=blue&label=react)
 ![marked](https://img.shields.io/npm/v/marked?color=green&label=marked)
 ![prismjs](https://img.shields.io/npm/v/prismjs?color=orange&label=prismjs)
-![simplebar](https://github.com/Grsmto/simplebar/tree/master/packages/simplebar-react)
+![simplebar](https://img.shields.io/npm/v/simplebar-react?color=red&label=simplebar-react)
 
 Minimalistic markdown editor on React. [Demo](https://daniilsintsov.github.io/markdown-editor/)
 
@@ -17,4 +17,4 @@ Minimalistic markdown editor on React. [Demo](https://daniilsintsov.github.io/ma
 + Code highlighting with [prismjs](https://prismjs.com/)
 + Copying markup to the clipboard
 + Downloading a document with markup in *.md* format
-+ Custom scrollbar with [simplebar-react](https://github.com/Grsmto/simplebar/tree/master/packages/simplebar-reactjs.org/)
++ Custom scrollbar with [simplebar-react](https://github.com/Grsmto/simplebar/tree/master/packages/simplebar-react)
