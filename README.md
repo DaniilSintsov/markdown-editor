@@ -3,7 +3,7 @@
 ![react](https://img.shields.io/npm/v/react?color=blue&label=react)
 ![marked](https://img.shields.io/npm/v/marked?color=green&label=marked)
 ![prismjs](https://img.shields.io/npm/v/prismjs?color=orange&label=prismjs)
-![simplebar](https://img.shields.io/npm/v/simplebar-react?color=red&label=simplebar-react)
+![simplebar](https://github.com/Grsmto/simplebar/tree/master/packages/simplebar-react)
 
 Minimalistic markdown editor on React. [Demo](https://daniilsintsov.github.io/markdown-editor/)
 
