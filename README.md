@@ -7,6 +7,10 @@
 
 Minimalistic markdown editor on React. [Demo](https://daniilsintsov.github.io/markdown-editor/)
 
+## Screenshot
+
+![markdown editor](screenshots/markdown_editor.png)
+
 ## Features
 
 + Full Markdown supports with [marked](https://marked.js.org/)
